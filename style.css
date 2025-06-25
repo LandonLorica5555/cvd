@@ -629,9 +629,9 @@ footer {
 }
 
 .about-banner__image img {
+  display: grid;
   width: 100%;
   height: auto;
-  display: block;
   max-width: 100rem;
   max-height: 100rem;
 }
@@ -644,7 +644,7 @@ footer {
 
 .about__social-media-list ul {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .about__social-media-list ul li a i {
@@ -686,10 +686,43 @@ footer {
 }
 
 /* MEDIA BANNER ABOUT PAGE */
+/* ==== Breakpoints (Desktop-First) ===== */
+/* Large Laptops (1200px and below) */
+@media (max-width: 1200px) {
+}
+
+/* Tablets (992px = 99.2rem) */
 @media (max-width: 992px) {
   .about-trends__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
+    justify-items: center;
   }
+
+  .about-trends__title {
+    transition: all 0.3 ease;
+    justify-items: center;
+  }
+}
+
+/* Small Tablets (768px = 76.8rem) */
+@media (max-width: 768px) {
+  .about-trends__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .about-banner__image
+}
+
+/* Mobile (576px = 57.6rem) */
+@media (max-width: 576px) {
+
+}
+
+/* Small Mobile (400px = 40rem) */
+@media (max-width: 400px) {
+
 }
