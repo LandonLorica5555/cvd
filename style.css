@@ -782,6 +782,11 @@ footer {
   padding: 11rem 0;
 }
 
+.services-banner:nth-child(odd) {
+  padding: 11rem 0;
+  background-color: var(--clr-dark);
+}
+
 .services-container {
   justify-items: center;
 }
@@ -863,13 +868,8 @@ footer {
   color: var(--clr-primary);
 }
 
-/* SERVICES BANNER 3 */
+/* SERVICES BANNER 2 */
 /*  SERVICES BANNER 2 */
-.services-banner-2 {
-  padding: 11rem 0;
-  background-color: var(--clr-dark);
-}
-
 .services-container-2 {
   justify-items: center;
 }
@@ -878,7 +878,6 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  direction: rtl;
 }
 
 .services__title-2 {
@@ -902,7 +901,6 @@ footer {
   font-weight: 300;
   text-align: justify;
   color: var(--clr-light);
-  direction: ltr;
 }
 
 /* lorem ipsum bottom */
@@ -910,7 +908,6 @@ footer {
   font-weight: 300;
   text-align: justify;
   margin-top: 3rem;
-  direction: ltr;
 }
 
 /* price starts at */
@@ -918,7 +915,6 @@ footer {
   margin-top: 5rem;
   font-weight: 300;
   text-align: justify;
-  direction: ltr;
 }
 
 /* 150 dollars */
@@ -927,7 +923,6 @@ footer {
   font-size: 2.5rem;
   color: var(--clr-primary);
   text-align: justify;
-  direction: ltr;
 }
 
 /* italic paragraph */
@@ -937,7 +932,6 @@ footer {
   font-size: 1rem;
   font-style: italic;
   margin-bottom: 5rem;
-  direction: ltr;
 }
 
 .services__image-2 img {
