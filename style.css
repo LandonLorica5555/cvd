@@ -254,7 +254,6 @@ header {
   text-transform: uppercase;
   padding: 2rem 3.5rem;
   border-radius: 5rem;
-  color: var(--clr-light);
 }
 
 .btn--primary {
@@ -929,7 +928,6 @@ footer {
   display: inline-block;
   text-transform: uppercase;
   padding: 2rem 3.5rem;
-  background-color: var(--clr-primary);
   border-radius: 5rem;
   color: var(--clr-light);
 }
@@ -1346,7 +1344,6 @@ section.service:nth-child(odd) .service__title p {
 
 /* Small Mobile (400px = 40rem) */
 @media (max-width: 400px) {
-
   .contact__details__title h1 {
     text-align: center;
   }
