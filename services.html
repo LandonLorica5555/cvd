@@ -9,49 +9,55 @@
       content="Creative Visual Design (CVD) is a platform for showcasing creative coding projects and visual designs."
     />
     <title>Creative Visual Designs - Services</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
   </head>
   <body>
+    <!-- header -->
     <header>
       <div class="container">
         <div class="navbar">
           <a href="#">
-            <div class="logo">
+            <div class="navbar__logo">
               <img
-                class="logo__image"
-                src="./images/Brand.png"
+                src="./img/Brand.png"
                 alt="CVD Logo"
+                class="navbar__logo__image"
               />
-              <span class="logo__title"
-                >Creative
-                <span class="logo__title logo__title--highlight">Visual</span>
-                Designs</span
-              >
+
+              <span class="navbar__logo__title">
+                Creative <span>Visual</span> Designs
+              </span>
             </div>
           </a>
-          <nav class="nav-desktop">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="./index.html">Home</a>
+          <nav class="navbar__nav">
+            <ul class="navbar__nav__list">
+              <li
+                class="navbar__nav__list__item"
+              >
+                <a href="#">Home</a>
               </li>
-              <li class="nav__item">
-                <a href="./about.html">About</a>
+              <li class="navbar__nav__list__item">
+                <a href="#">About</a>
               </li>
-              <li class="nav__item nav__item--active">
-                <a href="./services.html">Services</a>
+              <li class="navbar__nav__list__item navbar__nav__list__item--active">
+                <a href="#">Services</a>
               </li>
-              <li class="nav__item"><a href="./updates.html">Updates</a></li>
-              <li class="nav__item"><a href="./contact.html">Contact</a></li>
+              <li class="navbar__nav__list__item">
+                <a href="#">Updates</a>
+              </li>
+              <li class="navbar__nav__list__item">
+                <a href="#">Contact</a>
+              </li>
             </ul>
           </nav>
           <button class="navbar__burger-button">
-            <span class="burger-line"></span>
-            <span class="burger-line"></span>
-            <span class="burger-line"></span>
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
         </div>
       </div>
@@ -86,10 +92,10 @@
           </div>
           <div class="service__image">
             <img
-              src="./images/service1.png"
+              src="./img/service1.png"
               alt="Holding a pen writing in a paper"
             />
-            <img src="./images/banner1.png" alt="Circle Yellow Banner Image" />
+            <img src="./img/banner1.png" alt="Circle Yellow Banner Image" />
           </div>
         </div>
       </div>
@@ -120,7 +126,7 @@
             </div>
           </div>
           <div class="service__image">
-            <img src="./images/servicce2.png" alt="Abstract Shapes" />
+            <img src="./img/servicce2.png" alt="Abstract Shapes" />
           </div>
         </div>
       </div>
@@ -151,19 +157,23 @@
             </div>
           </div>
           <div class="service__image">
-            <img src="./images/service3.png" alt="Instagram and YouTube Logo" />
-            <img src="./images/banner1.png" alt="Circle Yellow Banner Image" />
+            <img src="./img/service3.png" alt="Instagram and YouTube Logo" />
+            <img src="./img/banner1.png" alt="Circle Yellow Banner Image" />
           </div>
         </div>
       </div>
     </section>
+
+    <!-- contact -->
     <section class="contact-us">
       <div class="container">
         <h2>Feel free to talk to us about your Projects</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adepiscing elit.</p>
-        <a href="#" class="btn btn--gray">contact us</a>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <a href="#" class="btn btn--dark">contact us</a>
       </div>
     </section>
+
+    <!-- footer -->
     <footer>
       <div class="container">
         <div class="footer">
@@ -171,24 +181,34 @@
             <div class="footer__social-media-list">
               <ul>
                 <li>
-                  <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                  </a>
                 </li>
                 <li>
-                  <a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                  <a href="#">
+                    <i class="fa-brands fa-twitter fa-2x"></i>
+                  </a>
                 </li>
                 <li>
-                  <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                  <a href="#">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                  </a>
                 </li>
                 <li>
-                  <a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
+                  <a href="#">
+                    <i class="fa-brands fa-youtube fa-2x"></i>
+                  </a>
                 </li>
                 <li>
-                  <a href="#"><i class="fa-solid fa-envelope fa-2x"></i></a>
+                  <a href="#">
+                    <i class="fa-solid fa-envelope fa-2x"></i>
+                  </a>
                 </li>
               </ul>
             </div>
             <div class="footer__office-address">
-              <p>Baloc Road, brgy san ignacio San Pablo city, Laguna 4000</p>
+              <p>Baloc Road, Brgy. San Ignacio, San Pablo City, Laguna, 4000</p>
             </div>
           </div>
           <div class="footer__trademark">

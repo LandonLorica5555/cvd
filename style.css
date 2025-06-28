@@ -254,10 +254,12 @@ header {
   text-transform: uppercase;
   padding: 2rem 3.5rem;
   border-radius: 5rem;
+  color: var(--clr-light);
 }
 
 .btn--primary {
   background-color: var(--clr-primary);
+  color: var(--clr-light);
 }
 
 .btn--dark {
@@ -784,201 +786,312 @@ footer {
 /* SERVICES CSS */
 /* SERVICES CSS */
 /* SERVICES BANNER 1 */
-.web {
-  padding: 11rem 0 6rem 0;
-}
-
-.web__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: top;
-  gap: 2rem;
-}
-
-section.service:nth-child(odd) .service__title {
-  color: var(--clr-light);
-  justify-self: center;
-}
-
-.service__title h2 {
-  font-size: 4.6rem;
-  line-height: 5rem;
-  font-weight: 700;
-  color: var(--clr-primary);
-  margin-bottom: 5rem;
-}
-
-.service__title p {
-  margin-bottom: 3rem;
-  text-align: justify;
-  max-width: 390.33px;
-}
-
-section.service:nth-child(odd) .service__title p {
-  font-weight: 300;
-}
-
-.service__image {
-  position: relative;
-  justify-self: end;
-}
-
-section.service:nth-child(even) .service__image img:last-child {
-  position: absolute;
-  top: 0;
-  mix-blend-mode: overlay;
-}
-
-section.service:nth-child(odd) .service__image img {
-  width: 100%;
-  display: block;
-  height: auto;
-  max-width: 52rem;
-}
-
-section.service:nth-child(odd) .price p {
-  text-align: left;
-}
-
-.price p:first-child {
-  margin-top: 6rem;
-  margin-bottom: 0;
-}
-
-.price span {
-  color: var(--clr-primary);
-  font-weight: 600;
-  font-size: 2.7rem;
-}
-
-.price p:last-child {
-  font-size: 0.9rem;
-  font-style: italic;
-}
-
-.graphics {
-  padding: 11rem 0 6rem 0;
-  background-color: var(--clr-dark);
-}
-
-.graphics__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: top;
-  gap: 10rem;
-}
-
-.social {
-  padding: 11rem 0 6rem 0;
-}
-
-.social__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: top;
-  gap: 2rem;
-}
-
-.social__title h2 {
-  font-size: 4.6rem;
-  line-height: 5rem;
-  font-weight: 700;
-  color: var(--clr-primary);
-  margin-bottom: 5rem;
-}
-
-.social__title p {
-  margin-bottom: 3rem;
-  text-align: justify;
-  max-width: 390.33px;
-}
-
-/* Footer */
-
-footer {
-  padding: 6rem 0;
-  background-color: var(--clr-dark);
-}
-
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.footer__contact {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-}
-
-.footer__social-media-list ul {
-  display: flex;
-  gap: 1rem;
-}
-
-.footer__social-media-list ul li a i {
-  color: var(--clr-gray);
-}
-
-.footer__office-address p {
-  color: var(--clr-gray);
-}
-
-.footer__trademark {
-  color: var(--clr-gray);
-}
-
-/* Button */
-
-.btn {
-  display: inline-block;
-  text-transform: uppercase;
-  padding: 2rem 3.5rem;
-  border-radius: 5rem;
-  color: var(--clr-light);
-}
-
-.btn--gray {
-  background-color: var(--clr-dark);
-}
-
-/* Add this to your existing CSS */
-.no-scroll {
-  overflow: hidden;
-  height: 100%;
-  position: fixed;
-  width: 100%;
-}
-
-/* Alternate Sections */
-
-.service {
+/* SERVICES CSS */
+/* SERVICES CSS */
+/* SERVICES BANNER 1 */
+.services-banner {
   padding: 11rem 0;
-  text-align: left;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-section.service:nth-child(odd) {
+.services-banner:nth-child(odd) {
+  padding: 11rem 0;
   background-color: var(--clr-dark);
-  color: var(--clr-light);
-}
-
-section.service:nth-child(even) .wrapper {
-  direction: ltr;
-}
-
-section.service:nth-child(odd) .wrapper {
   direction: rtl;
 }
 
-section.service:nth-child(odd) .price,
-section.service:nth-child(odd) .service__title p {
+.services-container {
+  justify-items: center;
+}
+
+.services__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.services__title {
+  max-width: 345px;
+  width: 100%;
+}
+
+/* web design word */
+.services__title h1 {
+  font-size: 35px;
+  line-height: 4rem;
+  max-width: 50rem;
+  color: var(--clr-primary);
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+
+.services__title p {
+  max-width: 365px;
+  font-weight: 500;
+  text-align: justify;
+}
+
+/* lorem ipsum bottom */
+.services__title p:nth-child(3) {
+  font-weight: 500;
+  text-align: justify;
+  margin-top: 3rem;
+}
+
+/* price starts at */
+.services__title p:nth-child(4) {
+  margin-top: 5rem;
+  font-weight: 500;
+  text-align: justify;
+}
+
+/* 200 dollars */
+.services__title p:nth-child(5) {
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: var(--clr-primary);
+  text-align: justify;
+}
+
+/* italic paragraph */
+.services__title p:nth-child(6) {
+  font-weight: 600;
+  text-align: justify;
+  font-size: 1rem;
+  font-style: italic;
+  max-width: 15rem;
+  margin-bottom: 5rem;
+}
+
+.services-banner__image {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.services-banner__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 56rem;
+  max-height: 56rem;
+}
+
+.services-banner__image img:first-child {
+  opacity: 0.8;
+}
+
+.services-banner__image img:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+  opacity: 1;
+}
+
+.services__arrow-down {
+  color: var(--clr-primary);
+  font-weight: 300;
+}
+
+.services-banner__arrow-down {
+  color: var(--clr-primary);
+}
+
+/* SERVICES BANNER 2 */
+/*  SERVICES BANNER 2 */
+.services-container-2 {
+  justify-items: center;
+}
+
+.services__wrapper-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.services__title-2 {
+  max-width: 345px;
+  width: 100%;
+  justify-items: end;
+}
+
+/* graphic design word */
+.services__title-2 h1 {
+  font-size: 35px;
+  line-height: 4rem;
+  max-width: 50rem;
+  color: var(--clr-primary);
+  font-weight: 700;
+  margin-bottom: 4rem;
   direction: ltr;
+}
+
+.services__title-2 p {
+  max-width: 365px;
+  font-weight: 300;
+  text-align: justify;
+  color: var(--clr-light);
+  direction: ltr;
+}
+
+/* lorem ipsum bottom */
+.services__title-2 p:nth-child(3) {
+  font-weight: 300;
+  text-align: justify;
+  margin-top: 3rem;
+  direction: ltr;
+}
+
+/* price starts at */
+.services__title-2 p:nth-child(4) {
+  margin-top: 5rem;
+  font-weight: 300;
+  text-align: justify;
+}
+
+/* 150 dollars */
+.services__title-2 p:nth-child(5) {
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: var(--clr-primary);
+  text-align: justify;
+}
+
+/* italic paragraph */
+.services__title-2 p:nth-child(6) {
+  font-weight: 300;
+  text-align: justify;
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 5rem;
+}
+
+.services__image-2 img {
+  display: grid;
+  width: 100%;
+  height: auto;
+  max-width: 100rem;
+  max-height: 100rem;
+  justify-items: center;
+}
+
+.services__arrow-down-2 {
+  color: var(--clr-primary);
+  font-weight: 300;
+}
+
+.services-banner-2__arrow-down {
+  color: var(--clr-primary);
+}
+
+/* SERVICES BANNER 3 */
+/* SERVICES BANNER 3 */
+.services-banner-3 {
+  padding: 11rem 0;
+}
+
+.services-container-3 {
+  justify-items: center;
+}
+
+.services__wrapper-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.services__title-3 {
+  max-width: 345px;
+  width: 100%;
+}
+
+/* web design word */
+.services__title-3 h1 {
+  font-size: 35px;
+  line-height: 4rem;
+  max-width: 50rem;
+  color: var(--clr-primary);
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+
+.services__title-3 p {
+  max-width: 365px;
+  font-weight: 500;
+  text-align: justify;
+}
+
+/* lorem ipsum bottom */
+.services__title-3 p:nth-child(3) {
+  font-weight: 500;
+  text-align: justify;
+  margin-top: 3rem;
+}
+
+/* price starts at */
+.services__title-3 p:nth-child(4) {
+  margin-top: 5rem;
+  font-weight: 500;
+  text-align: justify;
+}
+
+/* 200 dollars */
+.services__title-3 p:nth-child(5) {
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: var(--clr-primary);
+  text-align: justify;
+}
+
+/* italic paragraph */
+.services__title-3 p:nth-child(6) {
+  font-weight: 600;
+  text-align: justify;
+  font-size: 1rem;
+  font-style: italic;
+  max-width: 15rem;
+  margin-bottom: 5rem;
+}
+
+.services-banner-3__image {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.services-banner-3__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 56rem;
+  max-height: 56rem;
+}
+
+.services-banner-3__image img:first-child {
+  opacity: 0.8;
+}
+
+.services-banner-3__image img:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: luminosity;
+  opacity: 0.5;
+}
+
+.services__arrow-down-3 {
+  color: var(--clr-primary);
+  font-weight: 300;
+}
+
+.services-banner-3__arrow-down {
+  color: var(--clr-primary);
 }
 
 /* ===== Breakpoints (Desktop-First) ===== */
